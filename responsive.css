@@ -32,12 +32,12 @@
   }
   
   .gallerys {
-    margin-left: 10px;
+    margin-left: 40px;
   }
 
   .gallery {
     width: 100%;
-    
+
   }
   
   /*overlay*/
@@ -81,7 +81,6 @@
 
 .overlay:target .close {
   position: absolute;
-/*   width: 20%; */
   top: 50px;
   left: 50%;
   color: white;
