@@ -172,7 +172,7 @@ ul.topnav li.icon {display: none;}
 .gallerys {
 /*   width: 100%; */
   margin-bottom: 40px;
-  margin: auto;
+  text-align: center;
 }
 
 .gallery {
