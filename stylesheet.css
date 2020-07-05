@@ -170,7 +170,7 @@ ul.topnav li.icon {display: none;}
 }
 
 .gallerys {
-/*   width: 100%; */
+  width: 100%;
   margin-bottom: 40px;
 }
 
@@ -182,7 +182,7 @@ ul.topnav li.icon {display: none;}
 
 .gallery-icon {
   /*width: 250px;*/
-/*   height: 160px; */
+  height: 160px;
   overflow: hidden;
   border: 2px solid #666;
   float: left;
