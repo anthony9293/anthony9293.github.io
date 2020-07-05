@@ -81,7 +81,7 @@
 
 .overlay:target .close {
   position: absolute;
-  width: 20%;
+/*   width: 20%; */
   top: 50px;
   left: 50%;
   color: white;
