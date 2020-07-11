@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../demo/css/style.css">
+    <link rel="stylesheet" href="../dist/css/glightbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- menggunakan bootstrap secara online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- css buatan sendiri -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- font awesome online -->
+    <script src="https://kit.fontawesome.com/c1ad69f8aa.js" crossorigin="anonymous"></script>
+
+    <!-- menggunakan font awesome offline -->
+    <!-- <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css"> -->
+
+    <!-- menggunakan bootstrap secara offline -->
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+
+    <title>Suhendra Art Gallery</title>
+  </head>  
+  <!-- <body id="page-top" onload="myFunction()"> -->
+  <body id="page-top">
+    
+    <!-- LOADING -->
+    <!-- <div class="loader">
+      <img src="../image/dll/loader2.gif" alt="Loading..." />
+    </div>
+    
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+      });
+    </script> -->
+
+    <!-- INFO -->
+    <!-- FONT AWESOME -->
+    <!-- www.fontawesome.com -->
+    <div class="bg-transparant fixed-top" id="info"> 
+          <!-- text-danger untuk merubah warna teks -->
+          <h6 class="text-danger">
+            Untuk pemesanan hubungi :
+            <a class="text-danger" href="#"><i class="fas fa-phone text-danger ml-3 mt-2"></i> 081361373545</a>
+            <a class="text-danger" href="#"><i class="fab fa-whatsapp text-danger ml-3 mt-2"></i> 081361373545</a>
+            <a class="text-danger" href="https://www.facebook.com/shendra.hmd"><i class="fab fa-facebook text-danger ml-3 mt-2"></i> shendra.hmd</a>
+            <a class="text-danger" href="https://instagram.com/shendrahmd"><i class="fab fa-instagram text-danger ml-3 mt-2"></i> shendrahmd</a>
+          </h6>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <!-- fixed top agar navbar tetap berada diatas saat di scroll -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"> 
+        <!-- buat class container supaya logo dan menu nya mempunyai margin kiri kanan -->
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <a class="navbar-brand" href="../index.html#page-top">
+                <img class="logo" src="../image/dll/logo_suhendra.png" height="65px">
+              </a>
+            <!-- navbar-toggler-right agar menu mobile nya rata kanan -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- d-flex align-items-end agar menu mobile nya rata kanan -->
+                <!-- ml-auto agar menu dekstop nya rata kanan -->
+                <ul class="d-flex align-items-end navbar-nav ml-auto">
+                  <!-- active berfungsi agar menu tetap berwarna aktif/putih, ganti disabled kebalik -->
+                  <li class="nav-item active">
+                    <!-- js-scroll-trigger untuk efek dropdown menu -->
+                    <a class="nav-link marpad-both" href="../index.html#page-top">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link marpad-both" href="profile.html">Profile <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link marpad-both" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link marpad-both" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- GALLERY -->
+    <!-- Simple images example -->
+      <section id="examples" class="section2">
+        <div class="content-gallery">
+          <div class="row">
+            <div class="submenu-top2 col-sm-12">
+                <h1>Gallery</h1>
+            </div>
+          </div>
+        </div>
+
+          <div class="container" >
+              <div class="row">
+                  <div class="col-md-12">
+                     
+                      <!-- <i class="fa fa-camera-retro heading-icon" aria-hidden="true"></i> -->
+                      <h1 class="galeri display-4 text-center">Gallery Lukisan</h1>
+                      <hr class="my-4">
+                      <ul class="box-container three-cols">
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Alam_liar.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Alam_liar.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Bunga_merah.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Bunga_merah.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Bukit_gundaling.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Bukit_gundaling.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Kali_kecil.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Kali_kecil.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Arwana.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Arwana.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a id="teststs" href="../image/full size/Ikan_koi.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Ikan_koi.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Anggrek_bulan.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Anggrek_bulan.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Batu_lobang_di_sibolga.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Batu_lobang_di_sibolga.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Bunga_anggrek_bulan.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Bunga_anggrek_bulan.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Danau_di_kaki_bukit.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Danau_di_kaki_bukit.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Danau_toba.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Danau_toba.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a id="teststs" href="../image/full size/Danau_toba_di_kala_senja.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Danau_toba_di_kala_senja.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Jalan_teduh.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Jalan_teduh.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Jambu_air.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Jambu_air.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Keheningan_hutan.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Keheningan_hutan.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Mbah_mangun.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Mbah_mangun.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Ombak_dan_mendung.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Ombak_dan_mendung.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a id="teststs" href="../image/full size/Ombak_di_waktu_senja.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Ombak_di_waktu_senja.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Jambu_air.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Jambu_air.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Keheningan_hutan.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Keheningan_hutan.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Panen_kelapa_sawit.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Panen_kelapa_sawit.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a href="../image/full size/Sungai_deli.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Sungai_deli.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+                          <li class="box">
+                              <div class="inner">
+                                  <a id="teststs" href="../image/full size/Telaga_di_tengah_hutan.jpg" class="glightbox">
+                                      <img src="../image/thumbnail/Telaga_di_tengah_hutan.jpg" alt="image">
+                                  </a>
+                              </div>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                 <h6>&copy; 2020 Suhendra Art Gallery. All Rights Reserved. <a href="">Published by anthony yusuf</a></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
+    <script src="../demo/js/valde.min.js"></script>
+    <script src="../dist/js/glightbox.js"></script>
+    <script src="../demo/js/site.js"></script>
+    <script>
+        var lightbox = GLightbox();
+
+        var lightboxDescription = GLightbox({
+            selector: '.glightbox2',
+        });
+        var lightboxVideo = GLightbox({
+            selector: '.glightbox3',
+            afterSlideLoad: (data) => {
+                console.log(data);
+            },
+            afterSlideChange: (prevSlide, currentSlide) => {
+                // prevSlide is the previously active slide
+                // currentSlide is the active slide
+                // the player variable can be false if slide has no video
+
+                const { index, slide, player } = currentSlide;
+
+                if (player) {
+
+                    if (!player.ready) {
+                        // If player is not ready
+                        player.on('ready', event => {
+                            // Do something when video is ready
+                        });
+                    }
+
+                    player.on('play', event => {
+                        console.log("Started play");
+                    });
+
+                    player.on('volumechange', event => {
+                        console.log("Volume change");
+                    });
+
+                    player.on('ended', event => {
+                        console.log("Video ended");
+                    });
+                }
+            }
+        });
+        var lightboxInlineIframe = GLightbox({
+            'selector': '.glightbox4'
+        });
+
+
+        /* var exampleApi = GLightbox({ selector: '', elements: [] });
+        exampleApi.insertSlide({
+            width: '90vw',
+            content: '<p>Example</p>'
+        });
+        exampleApi.insertSlide({
+            href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+        });
+        exampleApi.insertSlide({
+            width: '600vw',
+            content: document.getElementById('inline-example')
+        });
+        exampleApi.open(); */
+    </script>
+    
+  </body>
+</html>
