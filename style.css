@@ -104,10 +104,11 @@
   		width: 280px;
   	}
 
-  #kontakbawah img {
-  		width: 20px;
-  		height: 20px;
-  		margin-top: 30px;
+  	#kontakbawah img {
+  		width: 30px;
+  		height: 30px;
+  		margin-bottom: 5px;
+  		margin-right: 5px;
   	}
   	
 }
