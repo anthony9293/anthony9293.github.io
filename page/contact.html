@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../demo/css/style.css">
+    <link rel="stylesheet" href="../dist/css/glightbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- menggunakan bootstrap secara online -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- css buatan sendiri -->
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- font awesome online -->
+    <script src="https://kit.fontawesome.com/c1ad69f8aa.js" crossorigin="anonymous"></script>
+
+    <!-- menggunakan font awesome offline -->
+    <!-- <link rel="stylesheet" type="text/css" href="fontawesome-free/css/all.min.css"> -->
+
+    <!-- menggunakan bootstrap secara offline -->
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"> -->
+
+    <title>Suhendra Art Gallery</title>
+  </head>  
+  <body id="page-top" onload="myFunction()">
+  <!-- <body id="page-top"> -->
+    
+    <!-- LOADING -->
+    <div class="loader">
+      <img src="../image/dll/loader2.gif" alt="Loading..." />
+    </div>
+    
+    <script>
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+      });
+    </script>
+
+    <!-- INFO -->
+    <!-- FONT AWESOME -->
+    <!-- www.fontawesome.com -->
+    <div class="bg-transparant fixed-top" id="info"> 
+          <!-- text-danger untuk merubah warna teks -->
+          <h6 class="text-danger">
+            Untuk pemesanan hubungi :
+            <a class="text-danger" href="tel:+6281361373545"><i class="fas fa-phone text-danger ml-3 mt-2"></i> 081361373545</a>
+            <a class="text-danger" href="https://api.whatsapp.com/send?phone=+6281361373545"><i class="fab fa-whatsapp text-danger ml-3 mt-2"></i> 081361373545</a>
+            <a class="text-danger" href="https://www.facebook.com/shendra.hmd"><i class="fab fa-facebook text-danger ml-3 mt-2"></i> shendra.hmd</a>
+            <a class="text-danger" href="https://instagram.com/shendrahmd"><i class="fab fa-instagram text-danger ml-3 mt-2"></i> shendrahmd</a>
+          </h6>
+    </div>
+
+
+    <!-- NAVBAR -->
+    <!-- fixed top agar navbar tetap berada diatas saat di scroll -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"> 
+        <!-- buat class container supaya logo dan menu nya mempunyai margin kiri kanan -->
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <a class="navbar-brand" href="../index.html#page-top">
+                <img class="logo" src="../image/dll/logo_suhendra.png" height="65px">
+              </a>
+            <!-- navbar-toggler-right agar menu mobile nya rata kanan -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- d-flex align-items-end agar menu mobile nya rata kanan -->
+                <!-- ml-auto agar menu dekstop nya rata kanan -->
+                <ul class="d-flex align-items-end navbar-nav ml-auto">
+                  <!-- active berfungsi agar menu tetap berwarna aktif/putih, ganti disabled kebalik -->
+                  <li class="nav-item active">
+                    <!-- js-scroll-trigger untuk efek dropdown menu -->
+                    <a class="nav-link marpad-both" href="../index.html#page-top">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link marpad-both" href="profile.html">Profile <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link marpad-both" href="gallery.html">Gallery <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link marpad-both" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="content-contact">
+        <!-- <div class="row"> -->
+          <div class="submenu-top3"> <!-- col-sm-12 -->
+              <h1>Contact</h1> 
+          </div>
+       <!--  </div> -->
+
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-sm-12 col-md-6">
+              <h4 >
+                <i class="fas fa-map-marker-alt text-dark"></i> Jl. Eka Warni 1 No. 34, Kel. Gedung Johor, Kec. Medan Johor, Medan<br><br>
+                <a class="text-dark" href="tel:+6281361373545"><i class="fas fa-phone text-dark"></i> 081361373545</a><br><br>
+                <a class="text-dark" href="https://api.whatsapp.com/send?phone=+6281361373545"><i class="fab fa-whatsapp text-dark"></i> 081361373545</a><br><br>
+                <a class="text-dark" href="https://www.facebook.com/shendra.hmd"><i class="fab fa-facebook text-dark"></i> shendra.hmd</a><br><br>
+                <a class="text-dark" href="https://instagram.com/shendrahmd"><i class="fab fa-instagram text-dark"></i> shendrahmd</a>
+              </h4>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <!-- FOOTER -->
+      <div class="footer">
+        <div class="container">
+          <h6>&copy; 2020 Suhendra Art Gallery. All Rights Reserved. <a href="https://api.whatsapp.com/send?phone=+6281262963979">Published by anthony yusuf</a></h6>
+        </div>
+      </div>
+
+         <!-- KONTAK BAWAH KANAN -->
+    <!-- <ul class="d-flex align-items-end navbar-nav ml-auto"> -->
+     <!-- bg-transparant -->
+     <div class="kontakbawah bg-transparent fixed-bottom align-items-end navbar-nav"> 
+        <div class="row">
+
+          <div class="col-md-12">
+            <a href="https://api.whatsapp.com/send?phone=+6281361373545" >
+              <img src="../image/dll/whatsapp.png">
+            </a>
+          </div>
+          <div class="col-md-12">
+            <a href="tel:+6281361373545" >
+              <img src="../image/dll/phone.png">
+            </a>
+          </div>
+
+         </div>
+      </div>
+
+  </body>
+</html>
