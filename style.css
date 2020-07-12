@@ -105,9 +105,9 @@
   	}
 
   	#kontakbawah img {
-  		width: 15px;
-  		height: 15px;
-  		margin-bottom: 1px;
+  		width: 5px;
+  		height: 5px;
+  		margin-bottom: -10px;
   		margin-right: 1px;
   	}
   	
